@@ -1,8 +1,8 @@
-# Memoize
+# useMemoized
 
 This package was develop to provide a more powerful hook than React's useMemo.<br>
 
-## Why to use Memoize?
+## Why to use useMemoized?
 
 A problem of the `useMemo` is that it only holds the result of a function if the list of dependencies doesn't change between the re-renders, but if these values can repeat, the previous results calculated are forgetten, and the function will run again.<br>
 
@@ -10,7 +10,7 @@ To solve this, i looked for ways to keep the old results also cached to be reuse
 
 > Article: <https://www.freecodecamp.org/news/understanding-memoize-in-javascript-51d07d19430e/>
 
-## When use Memoize?
+## When use useMemoized?
 
 The `useMemoized` will cache all the results associated with the list of dependencies used during the life of the compoent, so if some dependency is random and can have unlimited values, you probably shouldn't use it.<br>
 
